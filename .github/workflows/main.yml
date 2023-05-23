@@ -1,0 +1,26 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build application
+        run: |
+          # Các bước để xây dựng ứng dụng của bạn
+
+      - name: Run tests
+        run: |
+          # Các bước để chạy kiểm thử
+
+      - name: Deploy to production
+        run: |
+          # Các bước để triển khai ứng dụng lên môi trường sản phẩm
